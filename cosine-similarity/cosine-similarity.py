@@ -13,11 +13,11 @@ def cosine_similarity(a, b):
     norm_b = np.linalg.norm(b)
 
     if norm_a == 0 or norm_b == 0:
-        return float(0)
-    else:
-        res = d_p/(norm_a*norm_b)
+        return 0.0
+   
+    return d_p/(norm_a*norm_b)
 
-        return float(res)
+        
 
 
     
