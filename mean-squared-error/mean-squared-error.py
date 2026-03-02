@@ -7,17 +7,8 @@ def mean_squared_error(y_pred, y_true):
     # Write code here
     y_pred = np.array(y_pred)
     y_true = np.array(y_true)
-
-    n = len(y_pred)
-
-    E = []
-
-    for i in range(n):
-        E.append((y_true[i] - y_pred[i])**2)
-
-    E = np.array(E)
-
-    mse = np.mean(E)
+    
+    mse = np.mean((y_true - y_pred)**2)
 
     return mse
 
