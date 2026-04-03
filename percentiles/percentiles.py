@@ -5,9 +5,9 @@ def percentiles(x, q):
     Compute percentiles using linear interpolation.
     """
     # Write code here
-    x = np.array(x)
-    q = np.array(q)
+    x = np.sort(np.array(x))
+    q = np.sort(np.array(q))
 
-    res = np.percentile(x, q, method = "linear")
+    res = np.percentile(x, q, method = 'linear')
 
     return res
